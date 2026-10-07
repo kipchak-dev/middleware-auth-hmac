@@ -1,0 +1,50 @@
+{
+    "name": "kipchak/middleware-auth-hmac",
+    "type": "middleware",
+    "description": "The Official HMAC Request Signing Middleware for the Kipchak API Development Kit (ADK). Verifies signed requests and webhooks with replay protection.",
+    "keywords": [
+        "APIs",
+        "HTTP",
+        "Microservices",
+        "Mamluk",
+        "HMAC",
+        "Request Signing",
+        "Webhooks",
+        "Standard Webhooks"
+    ],
+    "homepage": "https://mamluk.net",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Kipchak\\Middleware\\Auth\\HMAC\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kipchak\\Middleware\\Auth\\HMAC\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.4",
+        "kipchak/core": "^2 || ^3",
+        "kipchak/driver-config": "^1",
+        "kipchak/driver-logger": "^1",
+        "psr/cache": "^2 || ^3",
+        "psr/clock": "^1",
+        "psr/http-server-middleware": "^1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12",
+        "symfony/cache": "^8"
+    },
+    "suggest": {
+        "kipchak/driver-valkey": "Atomic, fleet-wide replay protection (recommended for production)",
+        "kipchak/driver-memcached": "Fleet-wide replay protection via Memcached",
+        "kipchak/driver-filecache": "Replay protection for a single host"
+    }
+}
