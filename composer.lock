@@ -145,11 +145,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "3.8",
+            "version": "3.9",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "85f34b8193a7d563b694d0ba33e2604411a89f35"
+                "reference": "f10e3d1bb9538c642379fe4ce1b4b8780f742528"
             },
             "require": {
                 "cuyz/valinor": "^2",
@@ -178,15 +178,15 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-10-06T03:45:09+00:00"
+            "time": "2026-10-07T03:58:13+00:00"
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.26",
+            "version": "1.27",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "a0d5f27204c3831826fa424f96b9957f68f5fe72"
+                "reference": "22fc9556ba49323a5e769868b38432b1f8a99e1c"
             },
             "require": {
                 "kipchak/core": "^2 || ^3"
@@ -210,15 +210,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-06T03:45:27+00:00"
+            "time": "2026-10-07T03:58:30+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.31",
+            "version": "1.32",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "b40c5fb76cdfa9e6a403f07adf11632c62a7d040"
+                "reference": "d5f642ed6fa82d564da5f39e6db80956503f6bf4"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -244,7 +244,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-06T03:45:47+00:00"
+            "time": "2026-10-07T03:58:48+00:00"
         },
         {
             "name": "laravel/serializable-closure",
