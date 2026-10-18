@@ -145,11 +145,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "3.10",
+            "version": "3.11",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "579b700972f957c5a7fe6ca8a83b7552dab329a9"
+                "reference": "b3d489ab091ca66134a4277ed9f87e8ee8527a59"
             },
             "require": {
                 "cuyz/valinor": "^2",
@@ -178,15 +178,15 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-10-17T06:43:11+00:00"
+            "time": "2026-10-18T05:19:32+00:00"
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.28",
+            "version": "1.29",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "42b6c4d8dd611089a7bfedc695a212d5ff73bbc3"
+                "reference": "3b4017f4e75ebdb337e92aca3f1d61aa357cf0bb"
             },
             "require": {
                 "kipchak/core": "^2 || ^3"
@@ -210,15 +210,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-17T06:43:31+00:00"
+            "time": "2026-10-18T05:19:56+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.33",
+            "version": "1.34",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "6d38c7aaff9ba61b3a461c76d44ec0aedf719983"
+                "reference": "5cc119273e461b9b6344341b69f88263adc4fef4"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -244,7 +244,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-17T06:43:50+00:00"
+            "time": "2026-10-18T05:20:15+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2407,16 +2407,16 @@
         },
         {
             "name": "zircote/swagger-php",
-            "version": "6.15.0",
+            "version": "6.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zircote/swagger-php.git",
-                "reference": "892dc2ccda5fe7d1d86c765fa9877e246c5032c6"
+                "reference": "6c6c03110bfaf02a46e9906b3f0058851f3df2c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/892dc2ccda5fe7d1d86c765fa9877e246c5032c6",
-                "reference": "892dc2ccda5fe7d1d86c765fa9877e246c5032c6",
+                "url": "https://api.github.com/repos/zircote/swagger-php/zipball/6c6c03110bfaf02a46e9906b3f0058851f3df2c8",
+                "reference": "6c6c03110bfaf02a46e9906b3f0058851f3df2c8",
                 "shasum": ""
             },
             "require": {
@@ -2485,7 +2485,7 @@
             ],
             "support": {
                 "issues": "https://github.com/zircote/swagger-php/issues",
-                "source": "https://github.com/zircote/swagger-php/tree/6.15.0"
+                "source": "https://github.com/zircote/swagger-php/tree/6.16.0"
             },
             "funding": [
                 {
@@ -2493,7 +2493,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-15T21:56:50+00:00"
+            "time": "2026-10-17T07:23:10+00:00"
         }
     ],
     "packages-dev": [
