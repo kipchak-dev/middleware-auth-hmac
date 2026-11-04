@@ -46,5 +46,29 @@
         "kipchak/driver-valkey": "Atomic, fleet-wide replay protection (recommended for production)",
         "kipchak/driver-memcached": "Fleet-wide replay protection via Memcached",
         "kipchak/driver-filecache": "Replay protection for a single host"
+    },
+    "extra": {
+        "kipchak": {
+            "type": "middleware",
+            "config": "sample.config.php",
+            "configName": "kipchak.auth.hmac.php",
+            "initialise": "\\Kipchak\\Middleware\\Auth\\HMAC\\HMAC::initialise($app);",
+            "after": [
+                "kipchak/middleware-feature-flags",
+                "kipchak/middleware-idempotency",
+                "kipchak/middleware-metering",
+                "kipchak/middleware-policy",
+                "kipchak/middleware-quotas",
+                "kipchak/middleware-response-cache"
+            ],
+            "before": [
+                "kipchak/middleware-audit",
+                "kipchak/middleware-opentelemetry",
+                "kipchak/middleware-redaction",
+                "kipchak/middleware-subashi",
+                "kipchak/middleware-subashi-pro"
+            ],
+            "docs": "https://kipchak.dev/docs/mw-auth-hmac"
+        }
     }
 }
