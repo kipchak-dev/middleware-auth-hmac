@@ -147,7 +147,7 @@ The body is still readable, and Slim's body parsing still works.
 Rejected requests get a JSON error with a stable `error` code:
 
 ```json
-{"code": 401, "status": "UNAUTHORIZED", "data": {"error": "signature_invalid", "message": "The request signature is invalid."}}
+{"code": 401, "status": "UNAUTHENTICATED", "data": {"error": "signature_invalid", "message": "The request signature is invalid."}}
 ```
 
 | `error` | Status | When |
@@ -162,6 +162,11 @@ Rejected requests get a JSON error with a stable `error` code:
 
 The detail behind each rejection (which key ID, how far the clock was off) is logged at `warning` through the
 Kipchak logger. Secrets and signatures are never logged.
+
+The `status` comes from kipchak/core's `ErrorStatus`, as kipchak/middleware-error writes it: `UNAUTHENTICATED` for a
+401, `PAYLOAD TOO LARGE` for a 413 and `SERVER_ERROR` for a 503. **Upgrading to 1.10:** it requires kipchak/core 3.18,
+and those statuses replace `UNAUTHORIZED` and `SERVICE UNAVAILABLE`. Clients should switch on the `error` code, which is
+unchanged.
 
 ## The kipchak scheme
 

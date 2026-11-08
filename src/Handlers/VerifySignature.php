@@ -214,7 +214,8 @@ final class VerifySignature implements MiddlewareInterface
 
     private function reject(Failure $failure): ResponseInterface
     {
-        return Http\Response::json(
+        // The status from ErrorStatus, as kipchak/middleware-error writes it: 401 UNAUTHENTICATED, 503 SERVER_ERROR.
+        return Http\Response::error(
             new Response(),
             ['error' => $failure->value, 'message' => $failure->message()],
             $failure->status()

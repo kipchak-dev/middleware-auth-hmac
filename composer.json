@@ -31,7 +31,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=8.4",
-        "kipchak/core": "^2 || ^3",
+        "kipchak/core": "^3.18",
         "kipchak/driver-config": "^1",
         "kipchak/driver-logger": "^1",
         "psr/cache": "^2 || ^3",

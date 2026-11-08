@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9f0fa57b9ea0e425b2995450ea45ed6",
+    "content-hash": "c88e3916a133c818bf0f8447ef4daf17",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -145,16 +145,16 @@
         },
         {
             "name": "kipchak/core",
-            "version": "3.16",
+            "version": "3.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kipchak-dev/core.git",
-                "reference": "ed6afa47aa5a49abc62b5cc8cbca12ef9651cb5e"
+                "reference": "7cf9a531d52af180e66b001ad840e22420524603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kipchak-dev/core/zipball/ed6afa47aa5a49abc62b5cc8cbca12ef9651cb5e",
-                "reference": "ed6afa47aa5a49abc62b5cc8cbca12ef9651cb5e",
+                "url": "https://api.github.com/repos/kipchak-dev/core/zipball/7cf9a531d52af180e66b001ad840e22420524603",
+                "reference": "7cf9a531d52af180e66b001ad840e22420524603",
                 "shasum": ""
             },
             "require": {
@@ -185,9 +185,9 @@
                 "microservices"
             ],
             "support": {
-                "source": "https://github.com/kipchak-dev/core/tree/3.16"
+                "source": "https://github.com/kipchak-dev/core/tree/3.18"
             },
-            "time": "2026-11-04T02:49:26+00:00"
+            "time": "2026-11-08T05:38:42+00:00"
         },
         {
             "name": "kipchak/driver-config",

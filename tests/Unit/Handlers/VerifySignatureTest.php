@@ -65,6 +65,7 @@ final class VerifySignatureTest extends TestCase
 
         $payload = json_decode((string) $response->getBody(), true, flags: JSON_THROW_ON_ERROR);
         $this->assertSame($status, $payload['code']);
+        $this->assertSame(match ($status) { 401 => 'UNAUTHENTICATED', 503 => 'SERVER_ERROR', 413 => 'PAYLOAD TOO LARGE' }, $payload['status'], 'the status string itself');
         $this->assertSame($error, $payload['data']['error']);
         $this->assertIsString($payload['data']['message']);
     }
